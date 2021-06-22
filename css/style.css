@@ -1,0 +1,293 @@
+/* 
+Project Name: 
+Client: 
+Authors: 
+Developed @ One Month in Mexico City 
+*/
+*{
+    -moz-box-sizing: border-box; /* Firexfox */
+    -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+    box-sizing: border-box; /* IE */
+    text-decoration: none;
+    transition: 1s ease-in-out;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+body{
+    background-image: url('https://i02.appmifile.com/images/2018/12/22/684d9488-c578-44a7-85eb-e12804bb4316.png'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    background-blend-mode: soft-light;
+    font-family: 'Oswald', sans-serif;
+}   
+.form{
+    margin:5% 0 5% 10%;
+    width: 80%; 
+    text-align: left; 
+    background: rgba(207, 205, 205, 0.795); 
+    border-radius: 3.125rem;
+    padding: 1.875rem;
+    position: relative;
+}
+.input{
+    padding: 0.25rem;
+    display:block; 
+    border:none;
+    border-bottom: 0.125rem solid #6C1D45;
+    margin-left:0.9375rem;
+    width:90%;
+    background-color: #ffffff00;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    transition: background-color 5000s;
+    /* border: 0.125rem solid #6C1D45; */
+}
+input:autofill {
+    /* border: 0.125rem solid #6C1D45; */
+}
+legend {
+    background-color: #6C1D45;
+    color: white;
+    padding: 0.3125rem 0.625rem;
+    margin-left: 5%;
+    font-size: 1.25rem;
+}
+fieldset {
+    display: block;
+    margin-inline-start: 0.125rem;
+    margin-inline-end: 0.125rem;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    border-width: 0.1875rem;
+    border-color: #6C1D45;
+    border-image: initial;
+    margin-bottom: 2%;
+    border-radius: 3.125rem;
+    padding-bottom: 1.25rem;
+    font-size: 1rem;
+}
+p{
+    margin-left: 30px;
+    float: left;
+}
+#nac, #gen{
+    margin: 0.9375rem 0 0 1.875rem;
+    display: inline-block;
+}
+
+/*SELECT*/
+/* The container must be positioned relative: */
+.custom-select{
+    position: relative;
+    font-family: Arial;
+    font-size: 1rem;
+    margin-left: 1.25rem;
+    display: inline-block;
+    width: 200px;
+}
+
+.custom-select select {
+    display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+    background-color: #6C1D45;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 0.875rem;
+    right: 0.625rem;
+    width: 0;
+    height: 0;
+    border: 0.375rem solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    border-radius: 3.125rem;
+}
+
+/* Style items (options): */
+.select-items {
+    position: absolute;
+    background-color: #6C1D45;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-radius: 1.25rem;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/*  */
+
+.custom-date-field {
+    font-family: Arial, Sans-serif;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    margin: 0 0 1.875rem 1.25rem;
+    background-color:#6C1D45;
+    border: none;
+    color: white;
+    border-radius: 50px;
+}
+
+.custom-date-field input {
+    border: none;
+    padding: 0.3125rem 0.625rem;
+    color: white;
+}
+
+.custom-date-field span {
+    display: block;
+    font-size: 1rem;
+}
+
+.custom-date-field label {
+    width: 30%;
+    display: inline-block;
+    font-size: 1rem;
+}
+a{
+    color: #fff;
+}
+#prom{
+    font-family: Arial, Sans-serif;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    /* margin: 0 0 1.875rem 1.25rem; */
+    background-color:#6C1D45;
+    border: none;
+    color: white;
+    border-radius: 50px;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+.footer{
+    width: 100%;
+    background-color: #6C1D45;
+    height: 100px;
+}
+.header{
+    width: 100%;
+    background-color: #6c1d4596;
+    height: 100px;
+}
+.logoimg{
+    width: 100px;
+    margin-left: 110px;
+    position: relative;
+}
+.logo{
+    width: 300px;
+    margin-left: -50px;
+}
+.logou{
+    width: 300px;
+    margin-left: 20px;
+}
+.logouser{
+    width: 60px;
+    margin-left: 135px;
+    position: relative;
+    padding-bottom: 30px;
+}
+#logoimg1{
+    width: 100px;
+    margin-left: 100px;
+    position: relative;
+    margin-right: 10px;
+}
+.btnAdmin:hover  #poliAdmin{
+    fill: #9b3467c9;
+}
+.btnStudent:hover  #poliStudent{
+    fill: #9b3467c9;
+}
+.btnMain{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6C1D45;
+    border-radius: 30px;
+    color: #FFFFFF;
+    transition: 0.6s ease-in;
+}
+.btnMain:hover{
+    box-shadow: 5px 10px 30px #9629609b;
+}
+.fondoForm{
+    position: absolute;
+    width: 100%;
+}
+canvas{
+    position:fixed;
+    z-index: -998;
+}
+/*Clases del login.html */
+.Espacio{
+    box-sizing: content-box;
+    width: 98%;
+}
+
+.input-admin{
+    padding: 0.5rem;
+    display:inline; 
+    border:none;
+    border-bottom: 0.125rem solid #6C1D45;
+    margin: 1rem 1rem;
+    width:98%;
+    background-color: #ffffff00;
+}
+#estadop{
+    width: 337px;
+}
+.correct{
+    background-color: rgba(172, 255, 47, 0.534);
+}
+.wrong{
+    background-color: rgba(255, 0, 0, 0.562);
+}
